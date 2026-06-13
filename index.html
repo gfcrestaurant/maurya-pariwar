@@ -611,5 +611,449 @@ font-size:32px;
 
 </footer>
 
+<input type="text" id="familySearch"
+placeholder="🔍 परिवार खोजें..."
+onkeyup="searchFamily()">
+<section class="family-directory">
+
+<h2 class="section-title">👨‍👩‍👧‍👦 Maurya Pariwar Directory</h2>
+
+<div class="family-grid">
+
+<div class="family-card" onclick="openProfile('parshuram')">
+<h3>🏠 परशुराम मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('lalchand')">
+<h3>🏠 लालचंद मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('satiram')">
+<h3>🏠 सतीराम मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('anil')">
+<h3>🏠 अनिल मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('hasnath')">
+<h3>🏠 हसनाथ मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('radheshyam')">
+<h3>🏠 राधेश्याम मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('hiraman')">
+<h3>🏠 हीरामन मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('omprakash')">
+<h3>🏠 ओम प्रकाश मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('shriram')">
+<h3>🏠 श्री राम मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+<div class="family-card" onclick="openProfile('abhay')">
+<h3>🏠 अभय मौर्य</h3>
+<p>परिवार देखें</p>
+</div>
+
+</div>
+</section>
+<!-- PROFILE POPUP -->
+
+<div id="profileModal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeProfile()">&times;</span>
+
+    <div id="profileData"></div>
+
+  </div>
+</div>
+
+<style>
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.7);
+z-index:9999;
+}
+
+.modal-content{
+background:white;
+width:90%;
+max-width:800px;
+margin:50px auto;
+padding:30px;
+border-radius:20px;
+max-height:85vh;
+overflow-y:auto;
+}
+
+.close{
+float:right;
+font-size:35px;
+cursor:pointer;
+color:#650000;
+}
+
+.profile-box h2{
+color:#650000;
+margin-bottom:20px;
+}
+
+.profile-box ul{
+padding-left:20px;
+}
+
+.profile-box li{
+margin:8px 0;
+}
+
+function searchFamily(){
+let input =
+document.getElementById("familySearch")
+.value.toLowerCase();
+
+let cards =
+document.querySelectorAll(".family-card");
+
+cards.forEach(card=>{
+let text =
+card.innerText.toLowerCase();
+
+card.style.display =
+text.includes(input)
+? "block"
+: "none";
+});
+
+  
+</style>
+
+<script>
+
+const profiles = {
+
+parshuram: `
+<div class="profile-box">
+<h2>🏠 परशुराम मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> परशुराम मौर्य</p>
+<p><b>पत्नी:</b> आशा देवी</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>जितेंद्र मौर्य</li>
+<li>सुमन मौर्य</li>
+<li>सुधा मौर्य</li>
+<li>परिधि</li>
+<li>प्रियांशु</li>
+</ul>
+
+</div>
+`,
+
+lalchand: `
+<div class="profile-box">
+<h2>🏠 लालचंद मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> लालचंद मौर्य</p>
+<p><b>पत्नी:</b> आशा देवी</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>जानकारी अपडेट की जाएगी</li>
+</ul>
+
+</div>
+`,
+
+satiram: `
+<div class="profile-box">
+<h2>🏠 सतीराम मौर्य परिवार</h2>
+
+<ul>
+<li>अखिलेश मौर्य</li>
+<li>अनामिका</li>
+<li>अमन</li>
+<li>अरविंद मौर्य</li>
+<li>अंश</li>
+<li>आदित्य</li>
+<li>अमित मौर्य</li>
+</ul>
+
+</div>
+`,
+
+anil: `
+<div class="profile-box">
+<h2>🏠 अनिल मौर्य परिवार</h2>
+
+<ul>
+<li>अनिल मौर्य</li>
+<li>अनमोल</li>
+<li>प्रभावती देवी</li>
+<li>गुड़िया</li>
+<li>अनीता देवी</li>
+</ul>
+
+</div>
+`,
+
+hasnath: `
+<div class="profile-box">
+<h2>🏠 हसनाथ मौर्य परिवार</h2>
+
+<ul>
+<li>हसनाथ मौर्य</li>
+<li>कबूतरी देवी</li>
+<li>कन्हैया लाल मौर्य</li>
+<li>माही</li>
+<li>शिवांश</li>
+<li>विपिन मौर्य</li>
+<li>रवि मौर्य</li>
+</ul>
+
+</div>
+`
+};
+
+function openProfile(name){
+document.getElementById("profileModal").style.display="block";
+document.getElementById("profileData").innerHTML=profiles[name];
+}
+
+function closeProfile(){
+document.getElementById("profileModal").style.display="none";
+}
+
+</script>
+
+radheshyam: `
+<div class="profile-box">
+<h2>🏠 राधेश्याम मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> राधेश्याम मौर्य</p>
+<p><b>पत्नी:</b> संगीता देवी</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>माधुरी</li>
+<li>नीलू</li>
+<li>निधि</li>
+</ul>
+
+</div>
+`,
+
+hiraman: `
+<div class="profile-box">
+<h2>🏠 हीरामन मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> हीरामन मौर्य</p>
+<p><b>पत्नी:</b> रीता देवी</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>अनुज मौर्य</li>
+<li>सरिता देवी</li>
+<li>आशीष मौर्य</li>
+</ul>
+
+</div>
+`,
+
+omprakash: `
+<div class="profile-box">
+<h2>🏠 ओम प्रकाश मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> ओम प्रकाश मौर्य</p>
+<p><b>पत्नी:</b> लक्खी देवी</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>अनूप मौर्य</li>
+<li>अभिषेक मौर्य</li>
+<li>अंजू मौर्य</li>
+<li>अंतिमा मौर्य</li>
+</ul>
+
+</div>
+`,
+
+shriram: `
+<div class="profile-box">
+<h2>🏠 श्री राम मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> श्री राम मौर्य</p>
+<p><b>पत्नी:</b> मालती देवी</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>अजीत मौर्य</li>
+<li>अंतिम मौर्य</li>
+<li>आयुष</li>
+<li>अनन्या</li>
+<li>अश्वनी मौर्य</li>
+<li>सविता देवी</li>
+<li>कविता देवी</li>
+<li>सुनीता देवी</li>
+</ul>
+
+</div>
+`,
+
+abhay: `
+<div class="profile-box">
+<h2>🏠 अभय मौर्य परिवार</h2>
+
+<p><b>मुखिया:</b> अभय मौर्य</p>
+
+<h3>परिवार सदस्य</h3>
+<ul>
+<li>अंकित मौर्य</li>
+</ul>
+
+</div>
+`,
+satyaprakash: `
+<div class="profile-box">
+<h2>🏠 सत्य प्रकाश मौर्य परिवार</h2>
+<ul>
+<li>सत्य प्रकाश मौर्य</li>
+<li>विजय प्रकाश मौर्य</li>
+<li>सूर्य प्रकाश मौर्य</li>
+<li>रितु मौर्य</li>
+<li>लैला देवी</li>
+</ul>
+</div>
+`,
+
+umesh: `
+<div class="profile-box">
+<h2>🏠 उमेश मौर्य परिवार</h2>
+<ul>
+<li>उमेश मौर्य</li>
+<li>गायत्री देवी</li>
+<li>श्री प्रकाश मौर्य</li>
+<li>श्री कृष्णा मौर्य</li>
+<li>चंद्रप्रभा देवी</li>
+<li>किरण मौर्य</li>
+</ul>
+</div>
+`,
+
+jayram: `
+<div class="profile-box">
+<h2>🏠 जयराम मौर्य परिवार</h2>
+<ul>
+<li>जयराम मौर्य</li>
+<li>मंजू देवी</li>
+<li>रक्षा मौर्य</li>
+</ul>
+</div>
+`,
+
+jaysingh: `
+<div class="profile-box">
+<h2>🏠 जय सिंह मौर्य परिवार</h2>
+<ul>
+<li>जय सिंह मौर्य</li>
+</ul>
+</div>
+`,
+
+harinath: `
+<div class="profile-box">
+<h2>🏠 हरिनाथ मौर्य परिवार</h2>
+<ul>
+<li>हरिनाथ मौर्य</li>
+</ul>
+</div>
+`,
+
+janardan: `
+<div class="profile-box">
+<h2>🏠 जनार्दन मौर्य परिवार</h2>
+<ul>
+<li>जनार्दन मौर्य</li>
+</ul>
+</div>
+`,
+
+shivprasad: `
+<div class="profile-box">
+<h2>🏠 शिवप्रसाद मौर्य परिवार</h2>
+<ul>
+<li>शिवप्रसाद मौर्य</li>
+</ul>
+</div>
+`,
+
+chandrika: `
+<div class="profile-box">
+<h2>🏠 चंद्रिका मौर्य परिवार</h2>
+<ul>
+<li>चंद्रिका मौर्य</li>
+</ul>
+</div>
+`,
+
+rajaram: `
+<div class="profile-box">
+<h2>🏠 राजाराम मौर्य परिवार</h2>
+<ul>
+<li>राजाराम मौर्य</li>
+</ul>
+</div>
+`,
+
+veerbahadur: `
+<div class="profile-box">
+<h2>🏠 वीर बहादुर परिवार</h2>
+<ul>
+<li>वीर बहादुर</li>
+</ul>
+</div>
+`,
+
+narendra: `
+<div class="profile-box">
+<h2>🏠 नरेंद्र मौर्य परिवार</h2>
+<ul>
+<li>नरेंद्र मौर्य</li>
+</ul>
+</div>
+`,
+
+vinod: `
+<div class="profile-box">
+<h2>🏠 विनोद गुप्ता परिवार</h2>
+<ul>
+<li>विनोद गुप्ता</li>
+</ul>
+</div>
+`,
+
+
 </body>
 </html>

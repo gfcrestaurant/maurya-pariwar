@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maurya Pariwar</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f4ee;
+}
+
+.navbar{
+height:80px;
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 50px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo h2{
+color:#650000;
+}
+
+.logo p{
+font-size:12px;
+color:#666;
+}
+
+.menu{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.login-btn{
+background:#650000;
+color:#fff;
+padding:12px 25px;
+border-radius:10px;
+text-decoration:none;
+}
+
+.hero{
+height:650px;
+background:
+linear-gradient(rgba(255,248,240,.85),rgba(255,248,240,.85)),
+url('https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+padding:0 80px;
+}
+
+.hero-content{
+max-width:550px;
+}
+
+.hero-content h1{
+font-size:65px;
+color:#5d0000;
+line-height:1.1;
+}
+
+.hero-content p{
+margin-top:20px;
+font-size:20px;
+color:#444;
+}
+
+.stats{
+display:flex;
+gap:20px;
+margin-top:35px;
+}
+
+.stat-box{
+background:#fff;
+padding:20px 35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.stat-box h2{
+color:#650000;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>Maurya Pariwar</h2>
+<p>Ekta • Sanskar • Samman</p>
+</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Parivar</a>
+<a href="#">Vanshavali</a>
+<a href="#">Gallery</a>
+<a href="#">Samachar</a>
+<a href="#">Contact</a>
+</div>
+
+<a href="#" class="login-btn">Login</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Maurya Pariwar</h1>
+
+<p>
+Hamara Parivar Hamari Pehchan Hai.
+15 Ghar, 125+ Sadasya.
+</p>
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>15</h2>
+<p>Kul Ghar</p>
+</div>
+
+<div class="stat-box">
+<h2>125+</h2>
+<p>Kul Sadasya</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.features{
+padding:40px 60px;
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:20px;
+margin-top:-80px;
+position:relative;
+z-index:10;
+}
+
+.feature-card{
+background:#fff;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-5px);
+}
+
+.icon{
+width:70px;
+height:70px;
+background:#650000;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+margin:auto;
+margin-bottom:15px;
+}
+
+.feature-card h3{
+color:#650000;
+margin-bottom:10px;
+}
+
+.feature-card p{
+font-size:14px;
+color:#666;
+}
+
+.section-title{
+font-size:35px;
+text-align:center;
+margin-top:60px;
+margin-bottom:40px;
+color:#650000;
+}
+
+.houses{
+padding:30px 60px;
+}
+
+.house-grid{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:20px;
+}
+
+.house-card{
+background:#fff;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.house-card:hover{
+transform:translateY(-5px);
+}
+
+.house-icon{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.house-card h4{
+color:#650000;
+margin-bottom:5px;
+}
+
+.house-card p{
+font-size:14px;
+color:#666;
+}
+
+</style>
+
+<section class="features">
+
+<div class="feature-card">
+<div class="icon">👨‍👩‍👧‍👦</div>
+<h3>Parivar Vivaran</h3>
+<p>15 gharon ki sampurn jankari</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">🌳</div>
+<h3>Vanshavali</h3>
+<p>Hamare purvaj aur parivar vriksh</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">📸</div>
+<h3>Gallery</h3>
+<p>Yaadon ki tasveeren</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">📅</div>
+<h3>Karyakram</h3>
+<p>Parivarik events aur milan</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">📢</div>
+<h3>Notice</h3>
+<p>Jaruri suchna aur updates</p>
+</div>
+
+<div class="feature-card">
+<div class="icon">📞</div>
+<h3>Sampark</h3>
+<p>Humse jude aur sampark kare</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Hamare 15 Ghar</h2>
+
+<section class="houses">
+
+<div class="house-grid">
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 1</h4>
+<p>Ramesh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 2</h4>
+<p>Suresh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 3</h4>
+<p>Mahesh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 4</h4>
+<p>Dinesh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 5</h4>
+<p>Rajesh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 6</h4>
+<p>Mukesh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 7</h4>
+<p>Naresh Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 8</h4>
+<p>Rohit Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 9</h4>
+<p>Amit Maurya</p>
+</div>
+
+<div class="house-card">
+<div class="house-icon">🏠</div>
+<h4>Ghar 10</h4>
+<p>Sunil Maurya</p>
+</div>
+
+</div>
+
+</section>
+<style>
+
+.info-section{
+padding:60px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+.events,
+.notice{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.events h2,
+.notice h2{
+color:#650000;
+margin-bottom:20px;
+}
+
+.event-item,
+.notice-item{
+padding:15px;
+border-bottom:1px solid #eee;
+}
+
+.event-item:last-child,
+.notice-item:last-child{
+border:none;
+}
+
+.event-item h4,
+.notice-item h4{
+color:#333;
+margin-bottom:5px;
+}
+
+.event-item p,
+.notice-item p{
+color:#777;
+font-size:14px;
+}
+
+.footer{
+background:#650000;
+color:#fff;
+padding:50px 60px;
+margin-top:50px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.footer h3{
+margin-bottom:15px;
+}
+
+.footer p{
+color:#ddd;
+line-height:1.7;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.2);
+}
+
+/* Mobile Responsive */
+
+@media(max-width:991px){
+
+.navbar{
+flex-direction:column;
+height:auto;
+padding:20px;
+gap:15px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+padding:30px;
+height:auto;
+}
+
+.hero-content h1{
+font-size:40px;
+}
+
+.features{
+grid-template-columns:repeat(2,1fr);
+padding:20px;
+}
+
+.house-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.info-section{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+.features{
+grid-template-columns:1fr;
+}
+
+.house-grid{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+font-size:32px;
+}
+
+}
+
+</style>
+
+<section class="info-section">
+
+<div class="events">
+
+<h2>📅 Aagami Karyakram</h2>
+
+<div class="event-item">
+<h4>Parivarik Milan Samaroh</h4>
+<p>15 August 2026 | Mau, Uttar Pradesh</p>
+</div>
+
+<div class="event-item">
+<h4>Vriksharopan Abhiyan</h4>
+<p>05 September 2026</p>
+</div>
+
+<div class="event-item">
+<h4>Shiksha Samman Samaroh</h4>
+<p>20 October 2026</p>
+</div>
+
+</div>
+
+<div class="notice">
+
+<h2>📢 Suchna / Notice</h2>
+
+<div class="notice-item">
+<h4>Parivarik Meeting</h4>
+<p>Sabhi sadasyon se anurodh hai ki meeting me upasthit rahein.</p>
+</div>
+
+<div class="notice-item">
+<h4>Vivah Samaroh</h4>
+<p>Ghar No. 4 me vivah ka ayojan.</p>
+</div>
+
+<div class="notice-item">
+<h4>Directory Update</h4>
+<p>Naye members ki jankari jald jodi jayegi.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-grid">
+
+<div>
+<h3>🌳 Maurya Pariwar</h3>
+<p>Ekta, Sanskar aur Samman ka prateek.</p>
+</div>
+
+<div>
+<h3>🏠 Kul Ghar</h3>
+<p>15 Ghar</p>
+</div>
+
+<div>
+<h3>👨‍👩‍👧‍👦 Kul Sadasya</h3>
+<p>125+ Members</p>
+</div>
+
+<div>
+<h3>📞 Sampark</h3>
+<p>+91 9876543210</p>
+<p>info@mauryapariwar.in</p>
+</div>
+
+</div>
+
+<div class="copyright">
+© 2026 Maurya Pariwar | All Rights Reserved
+</div>
+
+</footer>
+
+</body>
+</html>

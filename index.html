@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maurya Pariwar</title>
+
+<title>Dayad Maurya Pariwar</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -17,31 +18,38 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f8f4ee;
+background:#f8f5ef;
+color:#333;
 }
 
+/* NAVBAR */
+
 .navbar{
+background:#ffffff;
 height:80px;
-background:#fff;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:0 50px;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+padding:0 40px;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .logo h2{
 color:#650000;
+font-size:30px;
 }
 
 .logo p{
-font-size:12px;
+font-size:13px;
 color:#666;
 }
 
 .menu{
 display:flex;
-gap:30px;
+gap:25px;
 }
 
 .menu a{
@@ -50,469 +58,82 @@ color:#333;
 font-weight:500;
 }
 
+.menu a:hover{
+color:#650000;
+}
+
 .login-btn{
 background:#650000;
-color:#fff;
+color:white;
 padding:12px 25px;
 border-radius:10px;
 text-decoration:none;
 }
 
+/* HERO */
+
 .hero{
-height:650px;
+min-height:650px;
+
 background:
-linear-gradient(rgba(255,248,240,.85),rgba(255,248,240,.85)),
-url('https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1600');
+linear-gradient(rgba(255,248,240,.88),
+rgba(255,248,240,.88)),
+url("https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1600");
+
 background-size:cover;
 background-position:center;
-display:flex;
-align-items:center;
-padding:0 80px;
-}
 
-.hero-content{
-max-width:550px;
-}
-
-.hero-content h1{
-font-size:65px;
-color:#5d0000;
-line-height:1.1;
-}
-
-.hero-content p{
-margin-top:20px;
-font-size:20px;
-color:#444;
-}
-
-.stats{
-display:flex;
-gap:20px;
-margin-top:35px;
-}
-
-.stat-box{
-background:#fff;
-padding:20px 35px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.stat-box h2{
-color:#650000;
-}
-
-<style>
-
-.family-directory{
-padding:60px;
-}
-
-.family-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.family-card{
-background:#fff;
-padding:25px;
-border-radius:20px;
-cursor:pointer;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
-text-align:center;
-}
-
-.family-card:hover{
-transform:translateY(-5px);
-}
-
-.family-card h3{
-color:#650000;
-margin-bottom:10px;
-}
-
-.family-directory{
-padding:60px;
-background:#faf7f2;
-}
-
-.title{
-text-align:center;
-font-size:40px;
-color:#650000;
-margin-bottom:40px;
-}
-
-.family-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-.family-card{
-background:white;
-padding:25px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-cursor:pointer;
-transition:.3s;
-}
-
-.family-card:hover{
-transform:translateY(-6px);
-}
-
-.family-card h3{
-color:#650000;
-margin-bottom:10px;
-}
-
-.family-card p{
-color:#666;
-font-size:15px;
-}
-
-</style>
-</head>
-
-<body>
-
-<nav class="navbar">
-
-<div class="logo">
-<h2>Maurya Pariwar</h2>
-<p>Ekta • Sanskar • Samman</p>
-</div>
-
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Parivar</a>
-<a href="#">Vanshavali</a>
-<a href="#">Gallery</a>
-<a href="#">Samachar</a>
-<a href="#">Contact</a>
-</div>
-
-<a href="#" class="login-btn">Login</a>
-
-</nav>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Maurya Pariwar</h1>
-
-<p>
-Hamara Parivar Hamari Pehchan Hai.
-15 Ghar, 125+ Sadasya.
-</p>
-
-<div class="stats">
-
-<div class="stat-box">
-<h2>15</h2>
-<p>Kul Ghar</p>
-</div>
-
-<div class="stat-box">
-<h2>125+</h2>
-<p>Kul Sadasya</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.features{
-padding:40px 60px;
-display:grid;
-grid-template-columns:repeat(6,1fr);
-gap:20px;
-margin-top:-80px;
-position:relative;
-z-index:10;
-}
-
-.feature-card{
-background:#fff;
-padding:25px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.feature-card:hover{
-transform:translateY(-5px);
-}
-
-.icon{
-width:70px;
-height:70px;
-background:#650000;
-color:#fff;
-border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:30px;
-margin:auto;
-margin-bottom:15px;
+padding:50px;
 }
 
-.feature-card h3{
-color:#650000;
-margin-bottom:10px;
-}
-
-.feature-card p{
-font-size:14px;
-color:#666;
-}
-
-.section-title{
-font-size:35px;
+.hero-content{
+max-width:900px;
 text-align:center;
-margin-top:60px;
-margin-bottom:40px;
-color:#650000;
 }
 
-.houses{
-padding:30px 60px;
-}
-
-.house-grid{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:20px;
-}
-
-.house-card{
-background:#fff;
-padding:25px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.house-card:hover{
-transform:translateY(-5px);
-}
-
-.house-icon{
-font-size:40px;
-margin-bottom:10px;
-}
-
-.house-card h4{
-color:#650000;
-margin-bottom:5px;
-}
-
-.house-card p{
-font-size:14px;
-color:#666;
-}
-
-</style>
-
-<section class="features">
-
-<div class="feature-card">
-<div class="icon">👨‍👩‍👧‍👦</div>
-<h3>Parivar Vivaran</h3>
-<p>15 gharon ki sampurn jankari</p>
-</div>
-
-<div class="feature-card">
-<div class="icon">🌳</div>
-<h3>Vanshavali</h3>
-<p>Hamare purvaj aur parivar vriksh</p>
-</div>
-
-<div class="feature-card">
-<div class="icon">📸</div>
-<h3>Gallery</h3>
-<p>Yaadon ki tasveeren</p>
-</div>
-
-<div class="feature-card">
-<div class="icon">📅</div>
-<h3>Karyakram</h3>
-<p>Parivarik events aur milan</p>
-</div>
-
-<div class="feature-card">
-<div class="icon">📢</div>
-<h3>Notice</h3>
-<p>Jaruri suchna aur updates</p>
-</div>
-
-<div class="feature-card">
-<div class="icon">📞</div>
-<h3>Sampark</h3>
-<p>Humse jude aur sampark kare</p>
-</div>
-
-</section>
-
-<h2 class="section-title">Hamare 15 Ghar</h2>
-
-<section class="houses">
-
-<div class="house-grid">
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 1</h4>
-<p>Ramesh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 2</h4>
-<p>Suresh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 3</h4>
-<p>Mahesh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 4</h4>
-<p>Dinesh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 5</h4>
-<p>Rajesh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 6</h4>
-<p>Mukesh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 7</h4>
-<p>Naresh Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 8</h4>
-<p>Rohit Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 9</h4>
-<p>Amit Maurya</p>
-</div>
-
-<div class="house-card">
-<div class="house-icon">🏠</div>
-<h4>Ghar 10</h4>
-<p>Sunil Maurya</p>
-</div>
-
-</div>
-
-</section>
-<style>
-
-.info-section{
-padding:60px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
-}
-
-.events,
-.notice{
-background:#fff;
-padding:30px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.events h2,
-.notice h2{
+.hero-content h1{
+font-size:70px;
 color:#650000;
 margin-bottom:20px;
 }
 
-.event-item,
-.notice-item{
-padding:15px;
-border-bottom:1px solid #eee;
-}
-
-.event-item:last-child,
-.notice-item:last-child{
-border:none;
-}
-
-.event-item h4,
-.notice-item h4{
-color:#333;
-margin-bottom:5px;
-}
-
-.event-item p,
-.notice-item p{
-color:#777;
-font-size:14px;
-}
-
-.footer{
-background:#650000;
-color:#fff;
-padding:50px 60px;
-margin-top:50px;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-}
-
-.footer h3{
-margin-bottom:15px;
-}
-
-.footer p{
-color:#ddd;
+.hero-content p{
+font-size:22px;
 line-height:1.7;
+color:#555;
 }
 
-.copyright{
-text-align:center;
+.stats{
+display:flex;
+justify-content:center;
+gap:20px;
 margin-top:40px;
-padding-top:20px;
-border-top:1px solid rgba(255,255,255,.2);
+flex-wrap:wrap;
 }
 
-/* Mobile Responsive */
+.stat-box{
+background:white;
+padding:25px 40px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
 
-@media(max-width:991px){
+.stat-box h2{
+font-size:35px;
+color:#650000;
+}
+
+.stat-box p{
+margin-top:8px;
+font-size:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
 
 .navbar{
 flex-direction:column;
@@ -526,203 +147,229 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.hero{
-padding:30px;
-height:auto;
-}
-
 .hero-content h1{
-font-size:40px;
+font-size:42px;
 }
 
-.features{
-grid-template-columns:repeat(2,1fr);
-padding:20px;
-}
-
-.house-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.info-section{
-grid-template-columns:1fr;
-padding:20px;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-}
-
-}
-
-@media(max-width:600px){
-
-.features{
-grid-template-columns:1fr;
-}
-
-.house-grid{
-grid-template-columns:1fr;
-}
-
-.hero-content h1{
-font-size:32px;
+.hero-content p{
+font-size:18px;
 }
 
 }
 
 </style>
+</head>
 
-<section class="info-section">
+<body>
 
-<div class="events">
+<nav class="navbar">
 
-<h2>📅 Aagami Karyakram</h2>
-
-<div class="event-item">
-<h4>Parivarik Milan Samaroh</h4>
-<p>15 August 2026 | Mau, Uttar Pradesh</p>
+<div class="logo">
+<h2>🌳 Dayad Maurya Pariwar</h2>
+<p>Ekta • Sanskar • Parampara</p>
 </div>
 
-<div class="event-item">
-<h4>Vriksharopan Abhiyan</h4>
-<p>05 September 2026</p>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Directory</a>
+<a href="#">Gallery</a>
+<a href="#">Vanshavali</a>
+<a href="#">Contact</a>
 </div>
 
-<div class="event-item">
-<h4>Shiksha Samman Samaroh</h4>
-<p>20 October 2026</p>
+<a href="#" class="login-btn">Login</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Dayad Maurya Pariwar</h1>
+
+<p>
+Hamara Parivar Hamari Pehchan Hai
+</p>
+
+<div class="stats">
+
+<div class="stat-box">
+<h2>19+</h2>
+<p>Pariwar</p>
 </div>
 
+<div class="stat-box">
+<h2>100+</h2>
+<p>Sadasya</p>
 </div>
 
-<div class="notice">
-
-<h2>📢 Suchna / Notice</h2>
-
-<div class="notice-item">
-<h4>Parivarik Meeting</h4>
-<p>Sabhi sadasyon se anurodh hai ki meeting me upasthit rahein.</p>
+<div class="stat-box">
+<h2>1</h2>
+<p>Dayad</p>
 </div>
 
-<div class="notice-item">
-<h4>Vivah Samaroh</h4>
-<p>Ghar No. 4 me vivah ka ayojan.</p>
-</div>
-
-<div class="notice-item">
-<h4>Directory Update</h4>
-<p>Naye members ki jankari jald jodi jayegi.</p>
 </div>
 
 </div>
 
 </section>
 
-<footer class="footer">
+<section class="directory">
 
-<div class="footer-grid">
+<h2 class="section-title">👨‍👩‍👧‍👦 Family Directory</h2>
 
-<div>
-<h3>🌳 Maurya Pariwar</h3>
-<p>Ekta, Sanskar aur Samman ka prateek.</p>
-</div>
-
-<div>
-<h3>🏠 Kul Ghar</h3>
-<p>15 Ghar</p>
-</div>
-
-<div>
-<h3>👨‍👩‍👧‍👦 Kul Sadasya</h3>
-<p>125+ Members</p>
-</div>
-
-<div>
-<h3>📞 Sampark</h3>
-<p>+91 9876543210</p>
-<p>info@mauryapariwar.in</p>
-</div>
-
-</div>
-
-<div class="copyright">
-© 2026 Maurya Pariwar | All Rights Reserved
-</div>
-
-</footer>
-
-<input type="text" id="familySearch"
+<input
+type="text"
+id="searchBox"
 placeholder="🔍 परिवार खोजें..."
-onkeyup="searchFamily()">
-<section class="family-directory">
-
-<h2 class="section-title">👨‍👩‍👧‍👦 Maurya Pariwar Directory</h2>
+onkeyup="searchFamily()"
+>
 
 <div class="family-grid">
 
 <div class="family-card" onclick="openProfile('parshuram')">
-<h3>🏠 परशुराम मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 1. परशुराम मौर्य</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('lalchand')">
-<h3>🏠 लालचंद मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 2. लालचंद मौर्य</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('satiram')">
-<h3>🏠 सतीराम मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 3. सतीराम मौर्य</h3>
 </div>
 
-<div class="family-card" onclick="openProfile('anil')">
-<h3>🏠 अनिल मौर्य</h3>
-<p>परिवार देखें</p>
+<div class="family-card" onclick="openProfile('ramavatar')">
+<h3>🏠 4. स्व. रामअवतार</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('hasnath')">
-<h3>🏠 हसनाथ मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 5. हसनाथ मौर्य</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('radheshyam')">
-<h3>🏠 राधेश्याम मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 6. राधेश्याम मौर्य</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('hiraman')">
-<h3>🏠 हीरामन मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 7. हीरामन मौर्य</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('omprakash')">
-<h3>🏠 ओम प्रकाश मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 8. ओम प्रकाश मौर्य</h3>
 </div>
 
 <div class="family-card" onclick="openProfile('shriram')">
-<h3>🏠 श्री राम मौर्य</h3>
-<p>परिवार देखें</p>
+<h3>🏠 9. श्री राम मौर्य</h3>
 </div>
 
-<div class="family-card" onclick="openProfile('abhay')">
-<h3>🏠 अभय मौर्य</h3>
-<p>परिवार देखें</p>
+<div class="family-card" onclick="openProfile('ramakant')">
+<h3>🏠 10. स्व. रमाकांत मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('swaminath')">
+<h3>🏠 11. स्व. स्वामीनाथ मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('umesh')">
+<h3>🏠 12. उमेश चंद्र मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('jaysingh')">
+<h3>🏠 13. जय सिंह मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('jayram')">
+<h3>🏠 14. जयराम मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('harinath')">
+<h3>🏠 15. हरिनाथ मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('janardan')">
+<h3>🏠 16. जनार्दन मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('ramsingh')">
+<h3>🏠 17. राम सिंह मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('ramchandra')">
+<h3>🏠 18. स्व. रामचंद्र मौर्य</h3>
+</div>
+
+<div class="family-card" onclick="openProfile('chandrika')">
+<h3>🏠 19. चंद्रिका मौर्य</h3>
 </div>
 
 </div>
+
 </section>
-<!-- PROFILE POPUP -->
+
+<style>
+
+.directory{
+padding:70px 25px;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#650000;
+margin-bottom:25px;
+}
+
+#searchBox{
+width:100%;
+max-width:500px;
+display:block;
+margin:0 auto 35px;
+padding:15px;
+font-size:16px;
+border-radius:12px;
+border:1px solid #ddd;
+}
+
+.family-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.family-card{
+background:white;
+padding:25px;
+border-radius:18px;
+cursor:pointer;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.family-card:hover{
+transform:translateY(-5px);
+}
+
+.family-card h3{
+color:#650000;
+}
+
+</style>
+
+  <!-- FAMILY PROFILE POPUP -->
 
 <div id="profileModal" class="modal">
-  <div class="modal-content">
 
-    <span class="close" onclick="closeProfile()">&times;</span>
+<div class="modal-content">
 
-    <div id="profileData"></div>
+<span class="close-btn" onclick="closeProfile()">
+✖
+</span>
 
-  </div>
+<div id="profileData"></div>
+
+</div>
+
 </div>
 
 <style>
@@ -739,26 +386,32 @@ z-index:9999;
 }
 
 .modal-content{
-background:white;
+background:#fff;
 width:90%;
-max-width:800px;
-margin:50px auto;
+max-width:900px;
+margin:40px auto;
 padding:30px;
 border-radius:20px;
 max-height:85vh;
 overflow-y:auto;
 }
 
-.close{
+.close-btn{
 float:right;
-font-size:35px;
+font-size:30px;
 cursor:pointer;
 color:#650000;
+font-weight:bold;
 }
 
 .profile-box h2{
 color:#650000;
 margin-bottom:20px;
+}
+
+.profile-box h3{
+margin-top:20px;
+color:#444;
 }
 
 .profile-box ul{
@@ -769,15 +422,32 @@ padding-left:20px;
 margin:8px 0;
 }
 
+.mobile{
+background:#650000;
+color:white;
+padding:10px 15px;
+display:inline-block;
+border-radius:10px;
+margin-top:15px;
+}
+
+</style>
+
+<script>
+
+/* SEARCH */
+
 function searchFamily(){
+
 let input =
-document.getElementById("familySearch")
+document.getElementById("searchBox")
 .value.toLowerCase();
 
 let cards =
 document.querySelectorAll(".family-card");
 
 cards.forEach(card=>{
+
 let text =
 card.innerText.toLowerCase();
 
@@ -785,10 +455,52 @@ card.style.display =
 text.includes(input)
 ? "block"
 : "none";
+
 });
 
-  
-</style>
+}
+
+/* POPUP OPEN */
+
+function openProfile(name){
+
+document.getElementById(
+"profileModal"
+).style.display="block";
+
+document.getElementById(
+"profileData"
+).innerHTML =
+profiles[name];
+
+}
+
+/* POPUP CLOSE */
+
+function closeProfile(){
+
+document.getElementById(
+"profileModal"
+).style.display="none";
+
+}
+
+window.onclick=function(e){
+
+let modal=
+document.getElementById(
+"profileModal"
+);
+
+if(e.target==modal){
+
+modal.style.display="none";
+
+}
+
+};
+
+</script>
 
 <script>
 
@@ -796,65 +508,110 @@ const profiles = {
 
 parshuram: `
 <div class="profile-box">
-<h2>🏠 परशुराम मौर्य परिवार</h2>
+<h2>🏠 1. परशुराम मौर्य</h2>
 
-<p><b>मुखिया:</b> परशुराम मौर्य</p>
 <p><b>पत्नी:</b> आशा देवी</p>
 
-<h3>परिवार सदस्य</h3>
+<h3>पुत्र</h3>
 <ul>
-<li>जितेंद्र मौर्य</li>
-<li>सुमन मौर्य</li>
-<li>सुधा मौर्य</li>
-<li>परिधि</li>
-<li>प्रियांशु</li>
+<li>जितेंद्र मौर्य
+<br>पत्नी: विद्योत्तमा देवी
+<br>संतान: परिधि, प्रियांशु
+</li>
 </ul>
 
+<h3>पुत्री</h3>
+<ul>
+<li>सुमन देवी</li>
+<li>सुधा देवी</li>
+</ul>
+
+<div class="mobile">
+📞 9793240156
+</div>
 </div>
 `,
 
 lalchand: `
 <div class="profile-box">
-<h2>🏠 लालचंद मौर्य परिवार</h2>
+<h2>🏠 2. लालचंद मौर्य</h2>
 
-<p><b>मुखिया:</b> लालचंद मौर्य</p>
-<p><b>पत्नी:</b> आशा देवी</p>
+<p><b>पत्नी:</b> उषा देवी</p>
 
-<h3>परिवार सदस्य</h3>
+<h3>पुत्र</h3>
 <ul>
-<li>जानकारी अपडेट की जाएगी</li>
+<li>पवन सिंह</li>
 </ul>
 
+<h3>पुत्री</h3>
+<ul>
+<li>चांदनी</li>
+<li>रोशनी</li>
+<li>रजनी</li>
+<li>अंजनी</li>
+</ul>
+
+<div class="mobile">
+📞 8777857972
+</div>
 </div>
 `,
 
 satiram: `
 <div class="profile-box">
-<h2>🏠 सतीराम मौर्य परिवार</h2>
+<h2>🏠 3. सतीराम मौर्य</h2>
+
+<p><b>पत्नी:</b> स्व. शांति देवी</p>
+
+<h3>पुत्र</h3>
 
 <ul>
-<li>अखिलेश मौर्य</li>
-<li>अनामिका</li>
-<li>अमन</li>
-<li>अरविंद मौर्य</li>
-<li>अंश</li>
-<li>आदित्य</li>
-<li>अमित मौर्य</li>
+<li>
+राजेश मौर्य
+<br>पत्नी: अंजू देवी
+<br>पुत्र: अंश, आदित्य
+</li>
+
+<li>
+अखिलेश मौर्य
+<br>पत्नी: माधुरी देवी
+<br>पुत्र: अमन, आशुतोष
+<br>पुत्री: अनामिका
+</li>
+
+<li>
+अमित मौर्य
+<br>पत्नी: किरन देवी
+</li>
 </ul>
+
+<div class="mobile">
+📞 8174875927
+</div>
 
 </div>
 `,
 
-anil: `
+ramavatar: `
 <div class="profile-box">
-<h2>🏠 अनिल मौर्य परिवार</h2>
+<h2>🏠 4. स्व. रामअवतार</h2>
+
+<p><b>पत्नी:</b> प्रभावती देवी</p>
+
+<h3>पुत्र</h3>
 
 <ul>
-<li>अनिल मौर्य</li>
-<li>अनमोल</li>
-<li>प्रभावती देवी</li>
+<li>
+अनिल मौर्य
+<br>पत्नी: दिव्या देवी
+<br>पुत्र: ओमकार मौर्य
+</li>
+</ul>
+
+<h3>पुत्री</h3>
+
+<ul>
 <li>गुड़िया</li>
-<li>अनीता देवी</li>
 </ul>
 
 </div>
@@ -862,41 +619,38 @@ anil: `
 
 hasnath: `
 <div class="profile-box">
-<h2>🏠 हसनाथ मौर्य परिवार</h2>
+<h2>🏠 5. हसनाथ मौर्य</h2>
+
+<p><b>पत्नी:</b> कबूतरी देवी</p>
 
 <ul>
-<li>हसनाथ मौर्य</li>
-<li>कबूतरी देवी</li>
-<li>कन्हैया लाल मौर्य</li>
-<li>माही</li>
-<li>शिवांश</li>
+<li>
+कन्हैया लाल
+<br>पत्नी: मुन्नी देवी
+<br>पुत्र: शिवांश
+<br>पुत्री: माही
+</li>
+
 <li>विपिन मौर्य</li>
 <li>रवि मौर्य</li>
+
 </ul>
 
+<div class="mobile">
+📞 9369983240
 </div>
-`
-};
 
-function openProfile(name){
-document.getElementById("profileModal").style.display="block";
-document.getElementById("profileData").innerHTML=profiles[name];
-}
-
-function closeProfile(){
-document.getElementById("profileModal").style.display="none";
-}
-
-</script>
+</div>
+`,
 
 radheshyam: `
 <div class="profile-box">
-<h2>🏠 राधेश्याम मौर्य परिवार</h2>
+<h2>🏠 6. राधेश्याम मौर्य</h2>
 
-<p><b>मुखिया:</b> राधेश्याम मौर्य</p>
 <p><b>पत्नी:</b> संगीता देवी</p>
 
-<h3>परिवार सदस्य</h3>
+<h3>पुत्री</h3>
+
 <ul>
 <li>माधुरी</li>
 <li>नीलू</li>
@@ -908,193 +662,263 @@ radheshyam: `
 
 hiraman: `
 <div class="profile-box">
-<h2>🏠 हीरामन मौर्य परिवार</h2>
+<h2>🏠 7. हीरामन मौर्य</h2>
 
-<p><b>मुखिया:</b> हीरामन मौर्य</p>
 <p><b>पत्नी:</b> रीता देवी</p>
 
-<h3>परिवार सदस्य</h3>
 <ul>
-<li>अनुज मौर्य</li>
-<li>सरिता देवी</li>
+<li>
+अनुज मौर्य
+<br>पत्नी: सरिता देवी
+<br>पुत्र: अथर्व
+</li>
+
 <li>आशीष मौर्य</li>
 </ul>
+
+<div class="mobile">
+📞 9936336484
+</div>
 
 </div>
 `,
 
 omprakash: `
 <div class="profile-box">
-<h2>🏠 ओम प्रकाश मौर्य परिवार</h2>
+<h2>🏠 8. ओम प्रकाश मौर्य</h2>
 
-<p><b>मुखिया:</b> ओम प्रकाश मौर्य</p>
 <p><b>पत्नी:</b> लक्खी देवी</p>
 
-<h3>परिवार सदस्य</h3>
 <ul>
 <li>अनूप मौर्य</li>
 <li>अभिषेक मौर्य</li>
 <li>अंजू मौर्य</li>
-<li>अंतिमा मौर्य</li>
+<li>अंतिम मौर्य</li>
 </ul>
+
+<div class="mobile">
+📞 9648706175
+</div>
 
 </div>
 `,
 
 shriram: `
 <div class="profile-box">
-<h2>🏠 श्री राम मौर्य परिवार</h2>
+<h2>🏠 9. श्री राम मौर्य</h2>
 
-<p><b>मुखिया:</b> श्री राम मौर्य</p>
 <p><b>पत्नी:</b> मालती देवी</p>
 
-<h3>परिवार सदस्य</h3>
 <ul>
-<li>अजीत मौर्य</li>
-<li>अंतिम मौर्य</li>
-<li>आयुष</li>
-<li>अनन्या</li>
+<li>
+अजीत मौर्य
+<br>पत्नी: अंतिमा देवी
+<br>पुत्र: आयुष
+<br>पुत्री: अनन्या
+</li>
+
 <li>अश्वनी मौर्य</li>
 <li>सविता देवी</li>
 <li>कविता देवी</li>
 <li>सुनीता देवी</li>
+
 </ul>
+
+<div class="mobile">
+📞 8932923614
+</div>
 
 </div>
 `,
 
-abhay: `
+ramakant: `
 <div class="profile-box">
-<h2>🏠 अभय मौर्य परिवार</h2>
+<h2>🏠 10. स्व. रमाकांत मौर्य</h2>
 
-<p><b>मुखिया:</b> अभय मौर्य</p>
+<p><b>पत्नी:</b> मंजू देवी</p>
 
-<h3>परिवार सदस्य</h3>
 <ul>
+<li>
+अभय मौर्य
+<br>पत्नी: पूनम देवी
+</li>
+
+<li>
+अमित मौर्य
+<br>पत्नी: प्रियंका देवी
+</li>
+
 <li>अंकित मौर्य</li>
 </ul>
 
+<div class="mobile">
+📞 7054833895
+</div>
+
 </div>
 `,
-satyaprakash: `
+
+swaminath: `
 <div class="profile-box">
-<h2>🏠 सत्य प्रकाश मौर्य परिवार</h2>
+<h2>🏠 11. स्व. स्वामीनाथ मौर्य</h2>
+
+<p><b>पत्नी:</b> सविता देवी</p>
+
 <ul>
-<li>सत्य प्रकाश मौर्य</li>
+<li>सत्य प्रकाश मौर्य<br>पत्नी: तारा देवी<br>पुत्री: तान्या</li>
+
+<li>सूर्य प्रकाश मौर्य<br>पत्नी: कंचन<br>पुत्री: प्रियांशी</li>
+
 <li>विजय प्रकाश मौर्य</li>
-<li>सूर्य प्रकाश मौर्य</li>
-<li>रितु मौर्य</li>
 <li>लैला देवी</li>
+<li>रितु मौर्य</li>
 </ul>
+
+<div class="mobile">📞 8400103798</div>
+
 </div>
 `,
 
 umesh: `
 <div class="profile-box">
-<h2>🏠 उमेश मौर्य परिवार</h2>
-<ul>
-<li>उमेश मौर्य</li>
-<li>गायत्री देवी</li>
-<li>श्री प्रकाश मौर्य</li>
-<li>श्री कृष्णा मौर्य</li>
-<li>चंद्रप्रभा देवी</li>
-<li>किरण मौर्य</li>
-</ul>
-</div>
-`,
+<h2>🏠 12. उमेश चंद्र मौर्य</h2>
 
-jayram: `
-<div class="profile-box">
-<h2>🏠 जयराम मौर्य परिवार</h2>
+<p><b>पत्नी:</b> गायत्री देवी</p>
+
 <ul>
-<li>जयराम मौर्य</li>
-<li>मंजू देवी</li>
-<li>रक्षा मौर्य</li>
+<li>श्री प्रकाश मौर्य</li>
+<li>कृष्ण प्रकाश मौर्य</li>
+<li>चंद्रप्रभा मौर्य</li>
+<li>चंद्रकिरण मौर्य</li>
 </ul>
+
+<div class="mobile">📞 7007707803</div>
+
 </div>
 `,
 
 jaysingh: `
 <div class="profile-box">
-<h2>🏠 जय सिंह मौर्य परिवार</h2>
+<h2>🏠 13. जय सिंह मौर्य</h2>
+
+<p><b>पत्नी:</b> लीलावती देवी</p>
+
 <ul>
-<li>जय सिंह मौर्य</li>
+<li>अंकित मौर्य</li>
+<li>अर्चना मौर्य</li>
 </ul>
+
+<div class="mobile">📞 7002575101</div>
+
+</div>
+`,
+
+jayram: `
+<div class="profile-box">
+<h2>🏠 14. जयराम मौर्य</h2>
+
+<p><b>पत्नी:</b> मंजू देवी</p>
+
+<ul>
+<li>अर्पना मौर्य</li>
+</ul>
+
 </div>
 `,
 
 harinath: `
 <div class="profile-box">
-<h2>🏠 हरिनाथ मौर्य परिवार</h2>
+<h2>🏠 15. हरिनाथ मौर्य</h2>
+
+<p><b>पत्नी:</b> सीमा देवी</p>
+
 <ul>
-<li>हरिनाथ मौर्य</li>
+<li>हर्ष मौर्य</li>
+<li>रूबी मौर्य</li>
 </ul>
+
+<div class="mobile">📞 9839117386</div>
+
 </div>
 `,
 
 janardan: `
 <div class="profile-box">
-<h2>🏠 जनार्दन मौर्य परिवार</h2>
+<h2>🏠 16. जनार्दन मौर्य</h2>
+
+<p><b>पत्नी:</b> स्व. ज्युति</p>
+
 <ul>
-<li>जनार्दन मौर्य</li>
+<li>हरिवंश मौर्य</li>
+<li>ऋषिकेश मौर्य</li>
+<li>हरिकेश मौर्य</li>
+<li>आकांक्षा</li>
+<li>अर्पिता</li>
+<li>अमृता</li>
+<li>अंकित</li>
+<li>सार्थक</li>
+<li>ऋषभ</li>
+<li>अंशिका</li>
+<li>अन्वी</li>
 </ul>
+
 </div>
 `,
 
-shivprasad: `
+ramsingh: `
 <div class="profile-box">
-<h2>🏠 शिवप्रसाद मौर्य परिवार</h2>
+<h2>🏠 17. राम सिंह मौर्य</h2>
+
 <ul>
-<li>शिवप्रसाद मौर्य</li>
+<li>प्रतिभा</li>
+<li>प्रतीक्षा</li>
 </ul>
+
+</div>
+`,
+
+ramchandra: `
+<div class="profile-box">
+<h2>🏠 18. स्व. रामचंद्र मौर्य</h2>
+
+<p><b>पत्नी:</b> रेणु देवी</p>
+
+<ul>
+<li>शिव प्रसाद मौर्य<br>पत्नी: साधना</li>
+<li>राम प्रसाद मौर्य</li>
+</ul>
+
+<div class="mobile">📞 6393357248</div>
+
 </div>
 `,
 
 chandrika: `
 <div class="profile-box">
-<h2>🏠 चंद्रिका मौर्य परिवार</h2>
-<ul>
-<li>चंद्रिका मौर्य</li>
-</ul>
-</div>
-`,
+<h2>🏠 19. चंद्रिका मौर्य</h2>
 
-rajaram: `
-<div class="profile-box">
-<h2>🏠 राजाराम मौर्य परिवार</h2>
-<ul>
-<li>राजाराम मौर्य</li>
-</ul>
-</div>
-`,
+<p><b>पत्नी:</b> प्रभावती देवी</p>
 
-veerbahadur: `
-<div class="profile-box">
-<h2>🏠 वीर बहादुर परिवार</h2>
 <ul>
-<li>वीर बहादुर</li>
-</ul>
-</div>
-`,
+<li>दिनेश मौर्य<br>पत्नी: सुमित्रा देवी<br>संतान: शुभम, पूजा, शिवन्या</li>
 
-narendra: `
-<div class="profile-box">
-<h2>🏠 नरेंद्र मौर्य परिवार</h2>
-<ul>
-<li>नरेंद्र मौर्य</li>
-</ul>
-</div>
-`,
+<li>दिवाकर<br>पत्नी: रितेशा</li>
 
-vinod: `
-<div class="profile-box">
-<h2>🏠 विनोद गुप्ता परिवार</h2>
-<ul>
-<li>विनोद गुप्ता</li>
+<li>इसरावती</li>
+<li>विमल</li>
+<li>नीलम</li>
+<li>गुड़िया</li>
 </ul>
-</div>
-`,
 
+<div class="mobile">📞 8726448549</div>
+
+</div>
+`
+
+};
+
+</script>
 
 </body>
 </html>
+
